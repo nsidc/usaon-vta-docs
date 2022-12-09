@@ -4,8 +4,7 @@
   surveys: Application surveys and Societal Benefit surveys.
 * `Response`: A completed survey.
 * `Library`: The collection of all `responses`.
-* `Registry`: The collection of available `survey objects`. `Experts` can either select
-  existing items or add to the registry when submitting a `response`.
+* `Registry`: The collection of available `survey objects` for use in `responses`.
 * `Analysis`: The process of converting many survey responses to a Sankey diagram by an
   `Analyst` interacting with the `Library`. Surveys are searched by title and `tags`.
 
@@ -14,6 +13,9 @@
 
 A list of available `response objects`. Drives consistency in naming across `surveys` to
 support `analysis` and also to ease data entry for `Experts`, over time.
+
+Experts _may not_ add new `applications` to the `registry`, but _may_ add new `data
+products` and `observing systems` to the `registry`.
 
 Is suspect that we can just have a basic Registered Survey Object that has generic
 fields whether it is a Data Product, Observing System, Etc. We probably need to have a
