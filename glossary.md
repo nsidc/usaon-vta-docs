@@ -34,7 +34,7 @@ items in the registry from an external source?
 * `Name`: Unique name of survey
 * `Description`
 * `Type`: Surveys could be requesting information about the current state or desired
-  state of `response subjects`. For "desired state" surveys, we wouldn't be interested in
+  state of `response objects`. For "desired state" surveys, we wouldn't be interested in
   `gaps`. (_TODO_: This concept needs to be refined in the future.)
 
 
@@ -53,13 +53,13 @@ items in the registry from an external source?
   instead? e.g. a submitted response has `submitted_date` populated, a draft does not)
 
 
-### Response subjects
+### Response objects 
 
-Response subjects exist both as a definition in the `registry` and an instantiation with
+Response objects exist both as a definition in the `registry` and an instantiation with
 rating(s) and other fields associated with a `response`. The following specifications
 pertain to rated instances, _not_ `registry` definitions.
 
-Some field definitions that may apply to multple subjects:
+Some field definitions that may apply to multple objects:
 
 * `Performance rating`: 0-100 rating of the performance of the subject
 * `Criticality rating`: 0-100 (or less) rating of the criticality of an input to an output,
@@ -141,7 +141,7 @@ SBA surveys will be needed to fill out all societal benefits of an application.
 ## Analysis
 
 A visualization that is generated from the `library` of responses by an `Analyst`
-selecting filters based on fields of `response subjects`, such as `tags`. We envision
+selecting filters based on fields of `response objects`, such as `tags`. We envision
 being able to blend `responses` around common Objects or Fields within those Objects, for
 example: "show all `responses` tied to a given `data product`". Or "show all where `tags`
 include 'rivers'", etc. If this is overly complex, it can be a down the line feature, but is
