@@ -9,7 +9,7 @@
   `Analyst` interacting with the `Library`. Surveys are searched by title and `tags`.
 
 
-## Registry
+## Response Object Registry
 
 A list of available `response objects`. Drives consistency in naming across `surveys` to
 support `analysis` and also to ease data entry for `Experts`, over time.

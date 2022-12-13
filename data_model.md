@@ -2,19 +2,27 @@
 erDiagram
 
 %% Dynamic operational data:
-survey {
-    uuid id PK
+user {
+    string id PK "user identifier"
+    string role FK
 }
 
 response {
-    int response_id PK
-    uuid survey_id FK "unique"
+    uuid id FK "unique"
+    string user_id FK
     datetime updated
+}
+
+response_object {
+    string id PK "name"
+    string type FK
+    TODO TODO "more fields?"
 }
 
 response_observing_system {
     int response_id PK
-    string id PK "name"
+    string id PK
+    string object_id FK
 
     enum type
     string url
@@ -56,7 +64,9 @@ response_observing_system_data_product {
 
 response_data_product {
     int response_id PK
-    string id PK "name"
+    string id PK
+    string object_id FK
+
 
     int satisfaction_rating "0-100"
 }
@@ -74,7 +84,8 @@ response_data_product_application {
 
 response_application {
     int response_id PK
-    string id PK "name"
+    string id PK
+    string object_id FK
 }
 
 response_application_societal_benefit_area {
@@ -86,6 +97,9 @@ response_application_societal_benefit_area {
 
 
 %% Static reference data:
+response_object_type {
+    string id PK "name"
+}
 societal_benefit_area {
     string id PK "name"
 }
@@ -97,23 +111,37 @@ societal_benefit_key_objective {
     string id PK "name"
     string societal_benefit_subarea_id FK
 }
+role {
+    string id PK "name"
+}
+
+
 
 
 %% Relationships
-survey ||--o| response: ""
+user }|--|| role: ""
 
+response }o--|| user: ""
 response ||--o{ response_observing_system: ""
 response ||--o{ response_data_product: ""
 response ||--o{ response_application: ""
 response ||--o{ response_application_societal_benefit_area: ""
 
+response_observing_system }|--|| response_object: ""
 response_observing_system ||--o| response_observing_system_observational: ""
 response_observing_system ||--o| response_observing_system_research: ""
+
+response_data_product }|--|| response_object: ""
+
+response_application }|--|| response_object: ""
+
 
 societal_benefit_area ||--|{ societal_benefit_subarea: ""
 societal_benefit_subarea ||--|{ societal_benefit_key_objective: ""
 
 response_application_societal_benefit_area ||--|| societal_benefit_area: ""
+
+response_object }|--|| response_object_type: ""
 
 %% Associative relationships (i.e. relationships with data)
 response_observing_system ||--|{ response_observing_system_data_product: ""
