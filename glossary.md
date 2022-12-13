@@ -63,8 +63,8 @@ Some field definitions that may apply to multple objects:
 
 * `Performance rating`: 0-100 rating of the performance of the subject
 * `Criticality rating`: 0-100 (or less) rating of the criticality of an input to an output,
-    e.g. criticality of an `observing system` to a `data product`. Rating must not be
-    greater than the `performance rating` of the ouptut subject.
+  e.g. criticality of an `observing system` to a `data product`. Rating must not be
+  greater than the `performance rating` of the ouptut subject.
 * `Rationale`: Why a `criticality` or `performance` rating was selected.
 * `Gaps`: Areas where improvement is needed.
 
@@ -225,6 +225,7 @@ small number of `SBAs`, to provide a view of the societal benefits of many
 `applications`.
 
 Fields/relationships:
+
 * `Name`: Unique
 * `Description`
 * `Expert(s)`: Members of cohort
