@@ -1,1 +1,595 @@
-<mxfile host="app.diagrams.net" modified="2022-12-13T01:34:56.095Z" agent="5.0 (X11)" etag="EXQyEJtIkzJfiv3PAmCF" version="20.5.3" type="device" pages="4"><diagram id="JYvHmb7hiJtnykxBGkx0" name="Survey System Context">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</diagram><diagram id="8eUl7OJ8XqfmRrWuw4AO" name="Survey System Containers">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</diagram><diagram id="xcPEvrOD1L_9xmLPiqGM" name="Survey API Components">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</diagram><diagram id="dkyvwnBiW_iq2VhVX2JP" name="Web GUI Components">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</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-12-15T22:25:20.507Z" agent="5.0 (X11)" etag="Avpi__oS7D9Mms4BfCT1" version="20.7.3" type="device" pages="4">
+  <diagram id="JYvHmb7hiJtnykxBGkx0" name="Survey System Context">
+    <mxGraphModel dx="1188" dy="370" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SXIEKRHDpayBBfr9AC7T-1" target="SXIEKRHDpayBBfr9AC7T-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-5" value="Administer Response Object Registry" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SXIEKRHDpayBBfr9AC7T-4" vertex="1" connectable="0">
+          <mxGeometry x="0.6467" relative="1" as="geometry">
+            <mxPoint x="-180" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="SXIEKRHDpayBBfr9AC7T-1" target="SXIEKRHDpayBBfr9AC7T-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-9" value="Administer new Application /&lt;br&gt;Societal Benefit Surveys" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SXIEKRHDpayBBfr9AC7T-7" vertex="1" connectable="0">
+          <mxGeometry x="0.0273" y="3" relative="1" as="geometry">
+            <mxPoint x="-34" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="SXIEKRHDpayBBfr9AC7T-1" target="SXIEKRHDpayBBfr9AC7T-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="280" as="sourcePoint" />
+            <mxPoint x="290" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-18" value="Validate responses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];spacingTop=7;" parent="SXIEKRHDpayBBfr9AC7T-17" vertex="1" connectable="0">
+          <mxGeometry x="-0.6082" y="-5" relative="1" as="geometry">
+            <mxPoint x="65" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Admin" c4Type="Person" c4Description="Administers and validates surveys. Administers the response object registry." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SXIEKRHDpayBBfr9AC7T-1">
+          <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="10" y="80" width="200" height="180" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="VTA Survey System" c4Type="Software System" c4Description="Allows for creation and completion of USAON Value Tree Analysis surveys." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SXIEKRHDpayBBfr9AC7T-3">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="430" y="305" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="[System Context] USAON Survey System" c4Type="ContainerScopeBoundary" c4Description="A context-level view of the USAON VTA Survey System" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Description%&lt;/div&gt;" id="SXIEKRHDpayBBfr9AC7T-6">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;metaEdit=1;allowArrows=0;resizable=1;rotatable=0;connectable=0;recursiveResize=0;expand=0;pointerEvents=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="10" y="770" width="260" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SXIEKRHDpayBBfr9AC7T-8" target="SXIEKRHDpayBBfr9AC7T-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-25" value="Respond to Application&amp;nbsp; Surveys" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SXIEKRHDpayBBfr9AC7T-24" vertex="1" connectable="0">
+          <mxGeometry x="0.0357" y="1" relative="1" as="geometry">
+            <mxPoint x="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SXIEKRHDpayBBfr9AC7T-8" target="SXIEKRHDpayBBfr9AC7T-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-27" value="Respond to Societal Benefit Surveys" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SXIEKRHDpayBBfr9AC7T-26" vertex="1" connectable="0">
+          <mxGeometry x="0.0974" y="-1" relative="1" as="geometry">
+            <mxPoint x="42" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Expert" c4Type="Person" c4Description="A respondent to Application or Societal Benefit Survey(s)." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SXIEKRHDpayBBfr9AC7T-8">
+          <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="890" y="80" width="200" height="180" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="SXIEKRHDpayBBfr9AC7T-14" target="SXIEKRHDpayBBfr9AC7T-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-16" value="Produce VTA diagrams&lt;br&gt;from responses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="SXIEKRHDpayBBfr9AC7T-15" vertex="1" connectable="0">
+          <mxGeometry x="0.74" y="2" relative="1" as="geometry">
+            <mxPoint x="-68" y="55" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Analyst" c4Type="Person" c4Description="A producer of Value Tree Analysis Sankey Diagrams from survey data" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SXIEKRHDpayBBfr9AC7T-14">
+          <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="10" y="440" width="200" height="180" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="SXIEKRHDpayBBfr9AC7T-19" target="SXIEKRHDpayBBfr9AC7T-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SXIEKRHDpayBBfr9AC7T-21" value="View VTA diagrams" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];spacing=2;spacingTop=-7;" parent="SXIEKRHDpayBBfr9AC7T-20" vertex="1" connectable="0">
+          <mxGeometry x="0.163" y="3" relative="1" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Viewer" c4Type="Person" c4Description="Consumes visualizations produced within the USAON VTA Survey System" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="SXIEKRHDpayBBfr9AC7T-19">
+          <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="890" y="440" width="200" height="180" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="8eUl7OJ8XqfmRrWuw4AO" name="Survey System Containers">
+    <mxGraphModel dx="1188" dy="370" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object placeholders="1" c4Name="USAON Value Tree Analysis Survey System" c4Type="SystemScopeBoundary" c4Application="Software System" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="8KHpPurIbAaRUkf83f5y-1">
+          <mxCell style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="40" y="240" width="830" height="560" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Survey DB" c4Container="Container" c4Technology="PostgreSQL" c4Description="Description of storage type container role/responsibility." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Type%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="OoYqRgNYLa9QkeA4gNLZ-1">
+          <mxCell style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="335" y="630" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="OoYqRgNYLa9QkeA4gNLZ-30" target="OoYqRgNYLa9QkeA4gNLZ-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="795" y="306" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-14" value="Redirect users&lt;br&gt;for authentication" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="OoYqRgNYLa9QkeA4gNLZ-13" vertex="1" connectable="0">
+          <mxGeometry x="-0.3336" y="1" relative="1" as="geometry">
+            <mxPoint x="16" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="OoYqRgNYLa9QkeA4gNLZ-4" target="OoYqRgNYLa9QkeA4gNLZ-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="306" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-22" value="Respond to&lt;br&gt;Application&lt;br&gt;Surveys" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="OoYqRgNYLa9QkeA4gNLZ-10" vertex="1" connectable="0">
+          <mxGeometry x="-0.2625" relative="1" as="geometry">
+            <mxPoint y="-37" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;entryX=0.121;entryY=0.04;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="OoYqRgNYLa9QkeA4gNLZ-4" target="OoYqRgNYLa9QkeA4gNLZ-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="207.48000000000002" y="260.4599999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-24" value="Respond to&lt;br&gt;Societal Benefit&lt;br&gt;Surveys" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="OoYqRgNYLa9QkeA4gNLZ-23" vertex="1" connectable="0">
+          <mxGeometry x="-0.1275" y="-2" relative="1" as="geometry">
+            <mxPoint x="16" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Expert" c4Type="Person" c4Description="..." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="OoYqRgNYLa9QkeA4gNLZ-4">
+          <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="40" y="1" width="200" height="180" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="OoYqRgNYLa9QkeA4gNLZ-5" target="OoYqRgNYLa9QkeA4gNLZ-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="261" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-17" value="Create&lt;br&gt;surveys" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="OoYqRgNYLa9QkeA4gNLZ-8" vertex="1" connectable="0">
+          <mxGeometry x="0.35" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.348;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="OoYqRgNYLa9QkeA4gNLZ-5" target="OoYqRgNYLa9QkeA4gNLZ-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="351.6400000000001" y="259.74" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-19" value="Manage &lt;br&gt;user roles" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="OoYqRgNYLa9QkeA4gNLZ-18" vertex="1" connectable="0">
+          <mxGeometry x="-0.1623" relative="1" as="geometry">
+            <mxPoint x="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.663;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="OoYqRgNYLa9QkeA4gNLZ-5" target="OoYqRgNYLa9QkeA4gNLZ-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="564.4800000000002" y="260.73" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-21" value="Solicit&lt;br&gt;Expert&lt;br&gt;Responses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="OoYqRgNYLa9QkeA4gNLZ-20" vertex="1" connectable="0">
+          <mxGeometry x="0.1727" y="1" relative="1" as="geometry">
+            <mxPoint x="-15" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.757;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="OoYqRgNYLa9QkeA4gNLZ-5" target="OoYqRgNYLa9QkeA4gNLZ-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="629.76" y="261" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-26" value="Validate responses,&lt;br&gt;curate Response&lt;br&gt;Library" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="OoYqRgNYLa9QkeA4gNLZ-25" vertex="1" connectable="0">
+          <mxGeometry x="-0.4573" y="-3" relative="1" as="geometry">
+            <mxPoint x="11" y="52" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;entryX=0.257;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="OoYqRgNYLa9QkeA4gNLZ-5" target="OoYqRgNYLa9QkeA4gNLZ-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290.0000000000001" y="261" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="136" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-28" value="Curate Response&lt;br&gt;Object Registry" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];spacingTop=5;" parent="OoYqRgNYLa9QkeA4gNLZ-27" vertex="1" connectable="0">
+          <mxGeometry x="0.1488" y="1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Admin" c4Type="Person" c4Description="..." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="OoYqRgNYLa9QkeA4gNLZ-5">
+          <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="355" y="1" width="200" height="180" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.964;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="OoYqRgNYLa9QkeA4gNLZ-6" target="OoYqRgNYLa9QkeA4gNLZ-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="769.8400000000001" y="260.73" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-29" value="Select responses&lt;br&gt;for Analyses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="OoYqRgNYLa9QkeA4gNLZ-11" vertex="1" connectable="0">
+          <mxGeometry x="-0.1813" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Analyst" c4Type="Person" c4Description="..." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="OoYqRgNYLa9QkeA4gNLZ-6">
+          <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="670" y="1" width="200" height="180" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="OoYqRgNYLa9QkeA4gNLZ-12" target="OoYqRgNYLa9QkeA4gNLZ-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="960" y="111" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OoYqRgNYLa9QkeA4gNLZ-16" value="Log in to&lt;br&gt;authenticate" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="OoYqRgNYLa9QkeA4gNLZ-15" vertex="1" connectable="0">
+          <mxGeometry x="0.0202" relative="1" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Google Single Sign On" c4Type="External Software System" c4Description="Allows users to authenticate (prove who they are) without us having to store their credentials or PII." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="OoYqRgNYLa9QkeA4gNLZ-12">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="910" y="246" width="150" height="154" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Web GUI" c4Container="Container" c4Technology="Flask (Python) or React (Typescript)" c4Description="Handles ALL user interactions to do with Value Tree Analysis: Creating surveys, collecting responses, validating responses, and analyzing responses.&#xa;&#xa;This component may be served directly by the API (e.g. Flask app) depending on the degree of client-side interaction." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Type%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="OoYqRgNYLa9QkeA4gNLZ-30">
+          <mxCell style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;strokeColor=#118ACD;fillColor=#23A2D9;strokeColor=#118ACD;strokeColor2=#0E7DAD;fontSize=12;fontColor=#ffffff;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=1;" parent="1" vertex="1">
+            <mxGeometry x="115" y="261" width="680" height="129" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="All users" c4Type="Person" c4Description="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="OoYqRgNYLa9QkeA4gNLZ-31">
+          <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=1;" parent="1" vertex="1">
+            <mxGeometry x="955" y="51" width="60" height="80" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="[Containers] USAON VTA Survey System" c4Type="ContainerDiagramTitle" c4Description="Description of &quot;containers&quot; within the USAON VTA Survey System" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Description%&lt;/div&gt;" id="OoYqRgNYLa9QkeA4gNLZ-33">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;metaEdit=1;allowArrows=0;resizable=1;rotatable=0;connectable=0;recursiveResize=0;expand=0;pointerEvents=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="10" y="800" width="380" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="-kOgEa6x1SJWl7xELMyl-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-kOgEa6x1SJWl7xELMyl-1" target="OoYqRgNYLa9QkeA4gNLZ-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-kOgEa6x1SJWl7xELMyl-3" value="Create, read, update, delete" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];spacingTop=0;" parent="-kOgEa6x1SJWl7xELMyl-2" vertex="1" connectable="0">
+          <mxGeometry x="-0.1611" relative="1" as="geometry">
+            <mxPoint y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-kOgEa6x1SJWl7xELMyl-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=classic;endFill=1;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-kOgEa6x1SJWl7xELMyl-1" target="OoYqRgNYLa9QkeA4gNLZ-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-kOgEa6x1SJWl7xELMyl-5" value="HTTP Requests" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-kOgEa6x1SJWl7xELMyl-4" vertex="1" connectable="0">
+          <mxGeometry x="0.35" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUb4flFDx3lzFAhnk8gi-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="-kOgEa6x1SJWl7xELMyl-1" target="OoYqRgNYLa9QkeA4gNLZ-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GUb4flFDx3lzFAhnk8gi-2" value="Authentication dance" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GUb4flFDx3lzFAhnk8gi-1" vertex="1" connectable="0">
+          <mxGeometry x="-0.011" y="-4" relative="1" as="geometry">
+            <mxPoint x="-17" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Survey API" c4Type="Container" c4Technology="Python (e.g. FastAPI/Flask + SQLAlchemy)" c4Description="Understands the data model. Converts user interactions (e.g. submit Response or validate Survey, or create Analysis) into records in the database." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="-kOgEa6x1SJWl7xELMyl-1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0E7DAD;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="335" y="440" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="xcPEvrOD1L_9xmLPiqGM" name="Survey API Components">
+    <mxGraphModel dx="1188" dy="370" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object placeholders="1" c4Name="[Components] Survey API" c4Type="ContainerDiagramTitle" c4Description="Component-level view of Survey API" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Description%&lt;/div&gt;" id="F_J93c1k4X-SJRGMN5PN-1">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;metaEdit=1;allowArrows=0;resizable=1;rotatable=0;connectable=0;recursiveResize=0;expand=0;pointerEvents=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="10" y="800" width="260" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Survey API" c4Type="ContainerScopeBoundary" c4Application="Container" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="F_J93c1k4X-SJRGMN5PN-3">
+          <mxCell style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="40" y="160" width="760" height="620" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="-ykP13_0jYQWJBa37Lls-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.234;exitY=0.982;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="-ykP13_0jYQWJBa37Lls-1" target="-ykP13_0jYQWJBa37Lls-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ykP13_0jYQWJBa37Lls-7" value="Admin:&lt;br&gt;Configure roles,&lt;br&gt;Authorize users" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-ykP13_0jYQWJBa37Lls-6" vertex="1" connectable="0">
+          <mxGeometry x="0.0215" relative="1" as="geometry">
+            <mxPoint y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-ykP13_0jYQWJBa37Lls-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;exitX=0.678;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="-ykP13_0jYQWJBa37Lls-1" target="-ykP13_0jYQWJBa37Lls-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-ykP13_0jYQWJBa37Lls-10" value="Admin: Curate&lt;br&gt;Response Objects" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-ykP13_0jYQWJBa37Lls-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.3264" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MTK6sr7jdqkoW7NMWpE-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="kcgqFyCrdJywsYL4o7GL-1" target="4MTK6sr7jdqkoW7NMWpE-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="570" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="240" y="560" />
+              <mxPoint x="950" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MTK6sr7jdqkoW7NMWpE-4" value="Authentication dance" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4MTK6sr7jdqkoW7NMWpE-3" vertex="1" connectable="0">
+          <mxGeometry x="-0.1382" relative="1" as="geometry">
+            <mxPoint x="294" y="-180" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kcgqFyCrdJywsYL4o7GL-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="-ykP13_0jYQWJBa37Lls-1" target="4MTK6sr7jdqkoW7NMWpE-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kcgqFyCrdJywsYL4o7GL-5" value="Authentication dance" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kcgqFyCrdJywsYL4o7GL-4" vertex="1" connectable="0">
+          <mxGeometry x="0.2635" y="1" relative="1" as="geometry">
+            <mxPoint x="10" y="26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Type="Web GUI" c4Container="Container" c4Technology="HTML / Javascript" c4Description="May be HTML served by API component or an independent Javascript app (e.g. React).&#xa;Communicates by HTTP requests to API endpoints in either case." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Type%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="-ykP13_0jYQWJBa37Lls-1">
+          <mxCell style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;strokeColor=#118ACD;fillColor=#23A2D9;strokeColor=#118ACD;strokeColor2=#0E7DAD;fontSize=12;fontColor=#ffffff;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=1;" parent="1" vertex="1">
+            <mxGeometry x="80" y="20" width="680" height="90" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="29sEYfbbjDKsj3eEmyyi-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-ykP13_0jYQWJBa37Lls-2" target="29sEYfbbjDKsj3eEmyyi-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="400.17647058823536" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MTK6sr7jdqkoW7NMWpE-1" value="Init, create,&lt;br&gt;read, update,&lt;br&gt;delete" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="29sEYfbbjDKsj3eEmyyi-5" vertex="1" connectable="0">
+          <mxGeometry x="0.2848" y="-1" relative="1" as="geometry">
+            <mxPoint x="21" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Type="Survey DB" c4Container="Container" c4Technology="PostgreSQL" c4Description="Remembers state of RBAC, Response Object Registry, Survey Response Library, and Analysis Library." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Type%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Container%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="-ykP13_0jYQWJBa37Lls-2">
+          <mxCell style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#8C8496;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" parent="1" vertex="1">
+            <mxGeometry x="830" y="580" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Role Based Access Control (RBAC)" c4Type="Component" c4Technology="Python" c4Description="Knows about roles (Admin, Expert, Analyst). Allows viewing and modifying role(s) of users. Enables all other components to authorize users by role." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="-ykP13_0jYQWJBa37Lls-4">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="120" y="200" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="-ykP13_0jYQWJBa37Lls-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.853;entryY=1.022;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="-ykP13_0jYQWJBa37Lls-8" target="-ykP13_0jYQWJBa37Lls-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ykP13_0jYQWJBa37Lls-12" value="Expert: Add or use&lt;br&gt;Response Objects&lt;br&gt;in Response" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-ykP13_0jYQWJBa37Lls-11" vertex="1" connectable="0">
+          <mxGeometry x="0.2567" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Response Object Registry" c4Type="Component" c4Technology="Python" c4Description="Knows about response object categories (Observing System, Data Product, Application, Societal Benefit Area). Allows curation of pre-defined response objects." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="-ykP13_0jYQWJBa37Lls-8">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="480" y="200" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="29sEYfbbjDKsj3eEmyyi-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;entryX=0.571;entryY=1.013;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-ykP13_0jYQWJBa37Lls-13" target="-ykP13_0jYQWJBa37Lls-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="340" />
+              <mxPoint x="468" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29sEYfbbjDKsj3eEmyyi-20" value="Admin:&lt;br&gt;Solicit Response from&lt;br&gt;Expert / Expert Cohort,&lt;br&gt;Validate Responses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="29sEYfbbjDKsj3eEmyyi-1" vertex="1" connectable="0">
+          <mxGeometry x="-0.8016" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29sEYfbbjDKsj3eEmyyi-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.532;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="-ykP13_0jYQWJBa37Lls-13" target="-ykP13_0jYQWJBa37Lls-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="370" />
+              <mxPoint x="442" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29sEYfbbjDKsj3eEmyyi-13" value="Expert /  Expert Cohort:&lt;br&gt;Submit Response" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="29sEYfbbjDKsj3eEmyyi-12" vertex="1" connectable="0">
+          <mxGeometry x="-0.5265" y="-1" relative="1" as="geometry">
+            <mxPoint x="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29sEYfbbjDKsj3eEmyyi-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="-ykP13_0jYQWJBa37Lls-13" target="-ykP13_0jYQWJBa37Lls-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="500" />
+              <mxPoint x="760" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29sEYfbbjDKsj3eEmyyi-17" value="Expert:&lt;br&gt;Search or create&lt;br&gt;Response Objects" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="29sEYfbbjDKsj3eEmyyi-16" vertex="1" connectable="0">
+          <mxGeometry x="0.1625" y="2" relative="1" as="geometry">
+            <mxPoint x="12" y="69" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Survey Response Library" c4Type="Component" c4Technology="Python" c4Description="Knows about Responses to Application and Societal Benefit Surveys solicited and completed. Allows browsing by tags and titles." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="-ykP13_0jYQWJBa37Lls-13">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="480" y="400" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="29sEYfbbjDKsj3eEmyyi-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;entryX=0.465;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="29sEYfbbjDKsj3eEmyyi-6" target="-ykP13_0jYQWJBa37Lls-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="370" />
+              <mxPoint x="396" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29sEYfbbjDKsj3eEmyyi-8" value="Analyst: Create&lt;br&gt;new Analysis" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="29sEYfbbjDKsj3eEmyyi-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.5131" y="2" relative="1" as="geometry">
+            <mxPoint x="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29sEYfbbjDKsj3eEmyyi-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.422;entryY=1.022;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="29sEYfbbjDKsj3eEmyyi-6" target="-ykP13_0jYQWJBa37Lls-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="340" />
+              <mxPoint x="367" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29sEYfbbjDKsj3eEmyyi-10" value="User: View Analysis" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="29sEYfbbjDKsj3eEmyyi-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.7044" y="1" relative="1" as="geometry">
+            <mxPoint x="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29sEYfbbjDKsj3eEmyyi-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="29sEYfbbjDKsj3eEmyyi-6" target="-ykP13_0jYQWJBa37Lls-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="540" />
+              <mxPoint x="600" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29sEYfbbjDKsj3eEmyyi-19" value="Analyst: Browse Responses for Analysis" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="29sEYfbbjDKsj3eEmyyi-18" vertex="1" connectable="0">
+          <mxGeometry x="0.175" y="1" relative="1" as="geometry">
+            <mxPoint x="-35" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Analysis Library" c4Type="Component" c4Technology="Python" c4Description="Enables browsing and creation of analyses. An analysis consists of a collection of Responses." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="29sEYfbbjDKsj3eEmyyi-6">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="120" y="400" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Data Model (ORM)" c4Type="Component" c4Technology="Python (SQLAlchemy)" c4Description="Knows about database schema. Enables all other components to interact with the database." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="29sEYfbbjDKsj3eEmyyi-21">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="480" y="580" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Google Single Sign On" c4Type="External Software System" c4Description="Allows users to authenticate (prove who they are) without us having to store their credentials or PII." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="4MTK6sr7jdqkoW7NMWpE-2">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="830" y="160" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Authentication" c4Type="Component" c4Technology="Python (OAuthLib)" c4Description="Knows how to do the OAuth / OpenID authentication dance with Google. Keeps track of which users have authorized with this app. DOES NOT store any PII except the user identifier (e-mail address)." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="kcgqFyCrdJywsYL4o7GL-1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="120" y="580" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dkyvwnBiW_iq2VhVX2JP" name="Web GUI Components">
+    <mxGraphModel dx="1188" dy="370" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object placeholders="1" c4Name="[Components] Web GUI" c4Type="ContainerDiagramTitle" c4Description="Component-level view of Web GUI. NOTE: Unclear if the GUI will be part of the API component or not." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Description%&lt;/div&gt;" id="oPv-wGb2fcCy11gOg40E-1">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;metaEdit=1;allowArrows=0;resizable=1;rotatable=0;connectable=0;recursiveResize=0;expand=0;pointerEvents=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="10" y="800" width="550" height="40" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Web GUI" c4Type="ContainerScopeBoundary" c4Application="Container" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="DW0QpJEit_fmoj6OJXB3-1">
+          <mxCell style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="40" y="160" width="760" height="620" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="-gF09XlJVdcGOfKskAlm-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="DW0QpJEit_fmoj6OJXB3-2" target="DW0QpJEit_fmoj6OJXB3-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="590" />
+              <mxPoint x="380" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-gF09XlJVdcGOfKskAlm-2" value="Expert:&lt;br&gt;Visualize&lt;br&gt;Response" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-gF09XlJVdcGOfKskAlm-1" vertex="1" connectable="0">
+          <mxGeometry x="0.4682" y="-3" relative="1" as="geometry">
+            <mxPoint x="37" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-gF09XlJVdcGOfKskAlm-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="DW0QpJEit_fmoj6OJXB3-2" target="DW0QpJEit_fmoj6OJXB3-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="620" />
+              <mxPoint x="400" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-gF09XlJVdcGOfKskAlm-4" value="Analyst:&lt;br&gt;Visualize&lt;br&gt;Analysis" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-gF09XlJVdcGOfKskAlm-3" vertex="1" connectable="0">
+          <mxGeometry x="0.1" relative="1" as="geometry">
+            <mxPoint x="30" y="-46" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Sankey Diagrams" c4Type="Component" c4Technology="Javascript (HighCharts)" c4Description="Displays data as Sankey Diagrams. Can display either Analyses or individual Responses or portions of Responses during the data entry process." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="DW0QpJEit_fmoj6OJXB3-2">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="120" y="560" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="W8E8OfaxwK0xsuPRr2En-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="DW0QpJEit_fmoj6OJXB3-4" target="W8E8OfaxwK0xsuPRr2En-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="200" />
+              <mxPoint x="240" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W8E8OfaxwK0xsuPRr2En-3" value="Expert: Use Objects, create new Objects" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="W8E8OfaxwK0xsuPRr2En-2" vertex="1" connectable="0">
+          <mxGeometry x="-0.1227" y="2" relative="1" as="geometry">
+            <mxPoint x="-17" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Response Forms" c4Type="Component" c4Technology="Python (flask-wtf) or JS (React)" c4Description="Displays Responses. Displays input forms for completing a Response. *Authorized*: Admin (can browse all Responses), Expert (browse/submit own Responses)" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="DW0QpJEit_fmoj6OJXB3-4">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="480" y="240" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Analyses" c4Type="Component" c4Technology="Python (flask-wtf) or JS (React)" c4Description="Displays Analysis Library. Displays input forms for generating Analyses by selecting Responses from Response Library. *Authorized*: Admin (browse), Analyst (submit)" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="DW0QpJEit_fmoj6OJXB3-5">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="480" y="400" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Survey" c4Type="Component" c4Technology="Python (flask-wtf) or JS (React)" c4Description="Displays all Surveys. Displays input forms for soliciting Responses by selecting an Expert respondent and an Application from the Registry. *Authorized*: Admin" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="aefv8pqzS7J5Er31trOE-1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="480" y="560" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="-gF09XlJVdcGOfKskAlm-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="1" source="-gF09XlJVdcGOfKskAlm-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="960" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-gF09XlJVdcGOfKskAlm-9" value="Fetch data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-gF09XlJVdcGOfKskAlm-8" vertex="1" connectable="0">
+          <mxGeometry x="0.0074" relative="1" as="geometry">
+            <mxPoint x="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Survey API" c4Type="Software System" c4Description="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="-gF09XlJVdcGOfKskAlm-5">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="840" y="370" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Roles" c4Type="Component" c4Technology="Python (flask-wtf) or JS (React)" c4Description="Displays user roles. Displays input forms for authorizing users to roles. *Authorized*: Admin" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="jB-M64IDzhQ5ZUc8_iEw-1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="120" y="400" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Object Registry" c4Type="Component" c4Technology="Python (flask-wtf) or JS (React)" c4Description="Displays registered Response Objects. Allows creation / modification of Response Objects. *Authorized*: Admin, Expert (via Response component)" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="W8E8OfaxwK0xsuPRr2En-1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
+            <mxGeometry x="120" y="240" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
