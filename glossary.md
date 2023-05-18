@@ -89,7 +89,7 @@ pertain to rated instances, _not_ `registry` definitions.
 * `Rationale`: Why a `criticality` or `performance` rating was selected.
 * `Gaps`: If the rating is less than "ideal" what improvements are needed.
 * `Variable or Attribute`: If an `observing system` or `data product` contains many
-  observable properties or variables, this allows a `respondent` to specific
+  observable properties or variables, this allows a `respondent` to specify
   which field they used. 
 * `Rated by`: Link to the `respondent` who provided this rating.
 
