@@ -14,7 +14,7 @@
 A list of available `response objects`. Drives consistency in naming across `surveys` to
 support `analysis` and also to ease data entry for `Experts`, over time.
 
-Experts may add new `applications` `data products` and `observing systems` to the `registry`.
+Experts may add new `applications`, `data products`, and `observing systems` to the `registry`.
 
 Is suspect that we can just have a basic `Registered Survey Object` that has generic
 fields whether it is a Data Product, Observing System, Etc. We probably need to have a
