@@ -67,7 +67,7 @@ except `Societal Benefit Areas`
 
 This answers the questions - how important is a particular `Observing System`, 
 `Data Product`, or `Application`and how well does it perform. It is reflected in the 
-`analysis`by the thicknessand color of the link connecting two `survey objects`. For 
+`analysis` by the thickness and color of the link connecting two `survey objects`. For 
 instance: Imagine a satelite (`observing system`) that is very important to a sea ice 
 `data product` but performs poorly because of persistent Arctic cloud cover and high 
 latency (`gaps`. Those would be linked by a thick (high `criticality`) red (low 
