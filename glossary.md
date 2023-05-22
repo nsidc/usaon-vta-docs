@@ -25,15 +25,9 @@ structures (e.g. Polar Observing Assets working group, Arctic Data Center, Feder
 Search crew). Evenually it's possible that we could import or sync items in the registry 
 from an external source.
 
-* `Name`
-* `Type`: `Observing system`, `data product`, `application`, `SBA`
-* _TODO_: Other fields?
 
-## Registered Survey Object Fields
+### Fields
 
-_NOTEfromHAZEL_ I think we can consolidate the `Observing System`, `Data Product`, 
-and `Application` sections below into this single list describing all survey objects, 
-except `Societal Benefit Areas`
 
 * `Object Type`: Type of Object - `Observing System`, `Data Product`, or `Application`
 * `Short Name`: Short name/description of object, which would be displayed in the analysis to save space.
