@@ -6,7 +6,7 @@
 * `Library`: The collection of all `responses`.
 * `Registry`: The collection of available `survey objects` for use in `responses`.
 * `Analysis`: The process of converting many survey responses to a Sankey diagram by an
-  `Analyst` interacting with the `Library`. Surveys are searched by title, `tags`, and/or `object metadata`.
+  `Analyst` interacting with the `Library`. Surveys are searched by title, `tags`, and/or other survey object fields.
 
 
 ## Response Object Registry
