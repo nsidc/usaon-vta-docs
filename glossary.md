@@ -136,45 +136,6 @@ Some field definitions that may apply to multple objects:
 * `Gaps`: Areas where improvement is needed.
 
 
-#### Observing system
-
-The optional input to a `Data product` (e.g. reanalysis or model-derived data products
-may not require an observing system).
-
-Fields/relationships:
-
-* `Performance rating`
-* `Rationale` for performance rating
-* `Gaps`
-* `Data product(s)` supported by this observing system
-    * `Criticality rating`
-    * `Rationale` for criticality rating
-
-
-#### Data product
-
-* `Performance criteria`: Text description of what the ideal performance of this data
-  product looks like. (_TODO_: Needs more thought. There is some disagreement on the AON
-  side about how/if this should be used.)
-* `Performance rating`
-* `Rationale` for performance rating (_NOTE_: AON team to consider if pre-defined values
-  are a good idea.)
-* `Gaps`
-* `Application` supported by this data product (always the same for a given survey,
-  since each survey corresponds with exactly 1 application)
-    * `Criticality rating`
-    * `Rationale` for criticality rating
-
-
-#### Application
-
-* `Performance criteria`: Text description of what the ideal performance of this data
-  product looks like.
-* `Performance rating`
-* `Rationale` for performance rating
-* `Gaps`
-
-
 #### Societal Benefit Area (SBA)
 
 This response subject will be completed by an `SBA cohort`.
