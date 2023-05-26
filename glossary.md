@@ -6,7 +6,7 @@
 * `Library`: The collection of all `responses`.
 * `Registry`: The collection of available `survey objects` for use in `responses`.
 * `Analysis`: The process of converting many survey responses to a Sankey diagram by an
-  `Analyst` interacting with the `Library`. Surveys are searched by title and `tags`.
+  `Analyst` interacting with the `Library`. Surveys are searched by title, `tags`, and/or other survey object fields.
 
 
 ## Response Object Registry
@@ -14,20 +14,83 @@
 A list of available `response objects`. Drives consistency in naming across `surveys` to
 support `analysis` and also to ease data entry for `Experts`, over time.
 
-Experts _may not_ add new `applications` to the `registry`, but _may_ add new `data
-products` and `observing systems` to the `registry`.
+Experts may add new `applications`, `data products`, and `observing systems` to the `registry`.
 
-Is suspect that we can just have a basic Registered Survey Object that has generic
+Is suspect that we can just have a basic `Registered Survey Object` that has generic
 fields whether it is a Data Product, Observing System, Etc. We probably need to have a
 separate structure to register Societal Benefit Analysis framework.
 
-_TODO_: Seek input from Bill Manley, ADC, Federated Search crew. Can we import or sync
-items in the registry from an external source?
+We want to align this data structure with best practices and partner organization
+structures (e.g. Polar Observing Assets working group, Arctic Data Center, Federated 
+Search crew). Evenually it's possible that we could import or sync items in the registry 
+from an external source.
 
-* `Name`
-* `Type`: `Observing system`, `data product`, `application`, `SBA`
-* _TODO_: Other fields?
 
+### Fields
+
+
+* `Object Type`: Type of Object - `Observing System`, `Data Product`, or `Application`
+* `Short Name`: Short name/description of object, which would be displayed in the analysis to save space.
+* `Full Name`: Full name of the object, which can be left blank if it is the same as the `short name`
+* `Organization`: The entity responsible for operation of the observing system, data product, or application.
+  It would be best to use standard names: https://ror.readme.io/docs/create-ror-powered-typeaheads-in-forms
+* `Funder`: The entity responsible for funding the observing system, data product, or application. 
+  It would be best to use standard names: https://ror.readme.io/docs/create-ror-powered-typeaheads-in-forms
+* `Country/Countries`: The countries contributing to running or funding an object. Use ISO 3166.
+* `Website`: The URL to access the referenced object directly
+* `Description`: Short summary of the object, including geographic or thematic scope. This could also be 
+  referred to as an abstract (see Arctic Data Center). 
+* `Contact Name`: The name of a point of contact for the object, e.g. a data manager or program coordinator.
+* `Contact Title`: The title of a point of contact for the object.
+* `Contact Email`: The email address for a point of contact for the object.
+* `Tags`: This is a user-defined field that admins can and will edit. It creates additional flexibility in 
+  the analyis, for example allowing for a regionally- or thematically-focused `analysis`.
+* `Version`: This field allows the `analyses` to reflect updates overtime. Likely
+  this field will have to be open text so it can match the versioning information that the organization uses.
+* `Persistent Identifier`: A standard way to refer back to the object's source, usually a ROR or DOI
+
+`Application` objects also include:
+* `Application Performance Criteria`: Text description of what the ideal performance of this data
+  product looks like.
+
+## Rated Instance of an Object
+
+* _NOTEfromHAZEL_ I think we can consolidate many of the sections below into this single
+  description of links between the `Observing System`, `Data Product`, and `Application` 
+  objects. Links to `Societal Benefit Areas` require separate definitions.
+
+This answers the questions - how important is a particular `Observing System`, 
+`Data Product`, or `Application`and how well does it perform. It is reflected in the 
+`analysis` by the thickness and color of the link connecting two `survey objects`. For 
+instance: Imagine a satelite (`observing system`) that is very important to a sea ice 
+`data product` but performs poorly because of persistent Arctic cloud cover and high 
+latency (`gaps`. Those would be linked by a thick (high `criticality`) red (low 
+`performance`) line. 
+
+Response objects exist both as a definition in the `registry` and an instantiation with
+rating(s) and other fields associated with a `response`. The following specifications
+pertain to rated instances, _not_ `registry` definitions.
+
+* `Link`: Defines which `survey objects` are connected. The rating is applied to that `link`.
+  _TODO_: Research ontologies around links/provinence - 
+  https://www.w3.org/TR/prov-o/#cross-reference-starting-point-terms
+* `Performance rating`: 0-100 rating of the performance of the subject. Answers the question: 
+  What is your satisfaction with this input? (0=No performance, 100 = perfect)
+* `Criticality rating`: 0-10 rating of the criticality of an input to an output,
+  e.g. criticality of an `observing system` to a `data product`. This answers the question:
+  On a scale of 1-10, how much would the loss of this input impact the performance of your 
+  `data product` or `application` (1 - very little impact; 10 - complete loss of performance).
+* `Rationale`: Why a `criticality` or `performance` rating was selected.
+* `Gaps`: If the rating is less than "ideal" what improvements are needed.
+* `Variable or Attribute`: If an `observing system` or `data product` contains many
+  observable properties or variables, this allows a `respondent` to specify
+  which field they used. 
+* `Rated by`: Link to the `respondent` who provided this rating.
+
+The `node color` of an `observating system` or a `data product` is defined in this 
+document: https://docs.google.com/presentation/d/1RmEGcPkC3_9o3qeAndv0QvAcdZwFIHC-/edit#slide=id.g1e651286dde_0_54
+The `node color` of an `application` is rated separately based on the application performance
+compared to the `application performance criteria`.
 
 ## Surveys
 
@@ -37,6 +100,9 @@ items in the registry from an external source?
   state of `response objects`. For "desired state" surveys, we wouldn't be interested in
   `gaps`. (_TODO_: This concept needs to be refined in the future.)
 
+_TODO_ Hazel to add in more survey-level metadata here
+_QUESTION_ Would this survey design allow for a data manager to link the `data product` 
+links to `observing systems` without any related `application`?
 
 ### Responses
 
@@ -51,6 +117,7 @@ items in the registry from an external source?
   `library`.
 * `Status`: Draft, ready to validate, validated, ??? (_TODO_: Better to use date fields
   instead? e.g. a submitted response has `submitted_date` populated, a draft does not)
+
 
 
 ### Response objects 
