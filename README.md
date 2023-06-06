@@ -14,7 +14,7 @@ Open in https://diagrams.net
 
 ## Links
 
-* [Deployed legacy webapp](usaon-vta-legacy.apps.nsidc.org/index.html)
+* [Deployed legacy webapp](http://usaon-vta-legacy.apps.nsidc.org/index.html)
 
 
 ### Other repos
