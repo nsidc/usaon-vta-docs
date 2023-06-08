@@ -9,7 +9,7 @@ Open in [Mermaid Live Editor](https://mermaid.live/) or view in GitHub.
 
 ### Architecture diagram
 
-Open in https://diagrams.net
+Download and open in https://diagrams.net
 
 
 ## Links
