@@ -22,6 +22,6 @@ Download and open in https://diagrams.net
 * [Legacy webapp source code](https://github.com/nsidc/usaon-vta-webapp-legacy)
 * [Legacy VM](https://github.com/nsidc/usaon-vta-legacy-vm)
 * [Value Tree Analsis VM](https://github.com/nsidc/usaon-vta-vm)
-* [Value Tree Analysis webapp](https://github.com/nsidc/usaon-vta-webapp)
+# * [Value Tree Analysis webapp](https://github.com/nsidc/usaon-vta-webapp)
 * [Value Tree Analysis Database](https://github.com/nsidc/usaon-vta-db)
 * [Value Tree Analysis Survey](https://github.com/nsidc/usaon-vta-survey)
