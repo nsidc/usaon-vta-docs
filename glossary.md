@@ -265,6 +265,7 @@ Fields/relationships:
 
 ### Analyst
 
+Note: These are people who are viewing the data. Not contributing to it in any way.
 A user who registers to generate one or more `analysis`. Eventually, we’d like Analysts
 to be able to save their Analyses, recreate them and update them. I’m not sure we need
 or should track things like Orcid ID, Bio, Affiliation for Analysts, but we could give
