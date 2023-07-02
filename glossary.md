@@ -12,9 +12,9 @@
 ## Response Object Registry
 
 A list of available `response objects`. Drives consistency in naming across `surveys` to
-support `analysis` and also to ease data entry for `Experts`, over time.
+support `analysis` and also to ease data entry for `Respondents`, over time.
 
-Experts may add new `applications`, `data products`, and `observing systems` to the `registry`.
+`Respondents` may add new `applications`, `data products`, and `observing systems` to the `registry`.
 
 Is suspect that we can just have a basic `Registered Survey Object` that has generic
 fields whether it is a Data Product, Observing System, Etc. We probably need to have a
@@ -22,7 +22,7 @@ separate structure to register Societal Benefit Analysis framework.
 
 We want to align this data structure with best practices and partner organization
 structures (e.g. Polar Observing Assets working group, Arctic Data Center, Federated 
-Search crew). Evenually it's possible that we could import or sync items in the registry 
+Search crew). Evenually, the goal is to be able to import or sync items in the registry 
 from an external source.
 
 
@@ -52,6 +52,12 @@ from an external source.
 `Application` objects also include:
 * `Application Performance Criteria`: Text description of what the ideal performance of this data
   product looks like.
+
+  _NOTE_ We intend to do `current state` and `desired state` `analyses`. In a `desired state` `analysis` we
+  would need a way to include `desired state` objects, for instance the USGS stream gage network if
+  funding increased and there were X number of additional gages. This would allow us to trace the impact
+  of changes on the entire network. Would we do this as another type of `version`, via specific `tags`,
+  and/or through unique naming conventions. Related to the survey `type`.
 
 ## Rated Instance of an Object
 
@@ -95,7 +101,7 @@ compared to the `application performance criteria`.
 ## Surveys
 
 * `Name`: Unique name of survey
-* `Description`
+* `Description`: Narrative description of the survey topic 
 * `Type`: Surveys could be requesting information about the current state or desired
   state of `response objects`. For "desired state" surveys, we wouldn't be interested in
   `gaps`. (_TODO_: This concept needs to be refined in the future.)
@@ -111,8 +117,8 @@ links to `observing systems` without any related `application`?
 * `Version`: Surveys can be re-issued, with changes, as a new version. E.g. a new survey
   is created as version "1" (version may be represented to user as creation date).
   Later, the survey is copied to version "2", altered, and re-issued, possibly to a
-  different `expert`. We also copy the old response to the new version so the
-  `Expert(s)` do not need to start from scratch.
+  different `respondent`. We also copy the old response to the new version so the
+  `respondent(s)` do not need to start from scratch.
 * `Validated date`: Date when an admin marked this survey valid for inclusion in the
   `library`.
 * `Status`: Draft, ready to validate, validated, ??? (_TODO_: Better to use date fields
@@ -121,6 +127,9 @@ links to `observing systems` without any related `application`?
 
 
 ### Response objects 
+
+_NOTEfromHAZEL_ I believe this section is out of date, and the Rated Instance of 
+an Object is sufficient and up-to-date. 
 
 Response objects exist both as a definition in the `registry` and an instantiation with
 rating(s) and other fields associated with a `response`. The following specifications
@@ -187,12 +196,15 @@ This response subject will be completed by an `SBA cohort`.
   * `Criticality rating`
   * `Rationale` of criticality rating
 
+_NOTE_ Should we separate the rationale for all the ratings? Performance vs. criticality. Hazel to
+discuss with Sandy. 
 
 ### Application survey
 
-Gather information about a single `application` and its related `data products` and
+Gather information about an `application` and its related `data products` and
 their related `observing systems`.
 
+_NOTE_ There could be more than one application per survey - see River Watch example.
 
 ### Societal Benefit Area survey
 
@@ -249,17 +261,18 @@ many Experts. We could potentially still circumvent the need for user accounts w
 Admin-driven link system that you originally suggested. We’d just want to capture this
 information about the Experts.
 
-Experts do _not_ add new `applications` to the `registry`, but may either select or add
-new `data products` and `observing systems` to the `registry`.
+Experts may add new `applications`, `data products`, and `observing systems` to the 
+`registry`, but or may select existing `objects`.
 
 Fields/relationships:
 
-* Name
-* OrcID (optional?)
-* Biography
-* Affiliation (should this be saved on a response-by-response basis? Affiliation may
+* `Name`
+* `Email`
+* `OrcID` (optional?)
+* `Biography`
+* `Affiliation` (should this be saved on a response-by-response basis? Affiliation may
   change between surveys)
-* `Tags` of interest (areas of expertise, e.g. `river-watch`)
+* `Tags` of interest (areas of expertise, e.g. `river-watch`, `hydrology`)
 * `Responses` submitted
 
 
