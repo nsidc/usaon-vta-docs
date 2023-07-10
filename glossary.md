@@ -262,7 +262,7 @@ Admin-driven link system that you originally suggested. We’d just want to capt
 information about the Experts.
 
 Experts may add new `applications`, `data products`, and `observing systems` to the 
-`registry`, but or may select existing `objects`.
+`registry`, or may select existing `objects`.
 
 Fields/relationships:
 
