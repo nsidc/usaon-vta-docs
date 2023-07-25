@@ -253,7 +253,7 @@ Fields/relationships:
 * Surveys created
 
 
-### Respondant (field expert)
+### Respondent (field expert)
 
 A user who is invited to register to provide a `response` to a `survey`. Admins will
 assign Surveys to Experts. Experts can contribute to multiple Surveys; Surveys can have
