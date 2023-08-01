@@ -257,9 +257,7 @@ Fields/relationships:
 
 A user who is invited to register to provide a `response` to a `survey`. Admins will
 assign Surveys to Experts. Experts can contribute to multiple Surveys; Surveys can have
-many Experts. We could potentially still circumvent the need for user accounts with the
-Admin-driven link system that you originally suggested. We’d just want to capture this
-information about the Experts.
+many Experts. 
 
 Experts may add new `applications`, `data products`, and `observing systems` to the 
 `registry`, or may select existing `objects`.
