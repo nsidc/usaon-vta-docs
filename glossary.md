@@ -266,7 +266,7 @@ Fields/relationships:
 
 * `Name`
 * `Email`
-* `OrcID` (optional?)
+* `OrcID` (optional? | validate format, e.g.: `0000-0003-3260-5445`)
 * `Biography`
 * `Affiliation` (should this be saved on a response-by-response basis? Affiliation may
   change between surveys)
@@ -289,7 +289,7 @@ a Guest Analyst and they could just export .jpgs and JSON to recreate their anal
 Fields/relationships:
 
 * Name
-* OrcID (optional?
+* OrcID (optional? | validate format, e.g.: `0000-0003-3260-5445`)
 * Biography
 * Affiliation
 * Tags of interest (areas of expertise, e.g. `river-watch`)
