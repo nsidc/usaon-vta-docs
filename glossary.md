@@ -189,7 +189,7 @@ Fields/relationships:
 This response subject will be completed by an `SBA cohort`.
 
 * `Rationale` of performance rating
-* `Gaps`
+* `Gaps` needed improvements
 * `Application` being rated in association with this SBA:
   * `Performance rating`
   * `Rationale` of performance rating
