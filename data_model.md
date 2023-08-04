@@ -2,6 +2,15 @@
 erDiagram
 
 %% Dynamic operational data:
+survey {
+    uuid id PK
+    int response_id FK
+    str title 
+    str created_by FK
+    datetime created_timestamp
+    str notes "nullable"
+}
+
 user {
     string id PK "user identifier"
     string role FK
@@ -26,7 +35,7 @@ response {
 
 
 response_observing_system {
-    int response_id PK
+    int response_id FK
     string id PK
     string object_id FK
 
@@ -43,7 +52,7 @@ response_observing_system {
 %% This name is confusing, but "observational" _is_ a type of observing system
 response_observing_system_observational {
     int response_id PK
-    string observing_system_id PK
+    string response_observing_system_id FK
 
     string platform
     string sensor
@@ -51,7 +60,7 @@ response_observing_system_observational {
 
 response_observing_system_research {
     int response_id PK
-    string observing_system_id PK
+    string response_observing_system_id FK
 
 
     string intermediate_product
@@ -69,18 +78,16 @@ response_observing_system_data_product {
 }
 
 response_data_product {
-    int response_id PK
-    string id PK
-    string object_id FK
-
-
+    int id PK
+    int response_id FK
+    
+    str name
     int satisfaction_rating "0-100"
 }
 
 response_data_product_application {
-    int response_id PK
-    string data_product_id PK
-    string application_id PK
+    string response_data_product_id FK
+    string response_application_id PK
 
     int data_product_contribution_to_application_rating "0-100"
     int satisfaction_rating "0-100"
@@ -89,15 +96,15 @@ response_data_product_application {
 }
 
 response_application {
-    string id PK
+    int id PK
 
     int response_id FK
-    string object_id FK
+    string name
 }
 
 response_application_societal_benefit_area {
-    int response_id PK
-    string societal_benefit_area_id PK
+    int response_application_id FK
+    string response_societal_benefit_area_id FK
 
     int application_contribution_to_sociateal_benefit_area_rating "0-100"
 }
@@ -143,8 +150,10 @@ role {
 
 
 %% Relationships
+survey }|--|| user: ""
 user }|--|| role: ""
 
+response }|--o{ survey: ""
 response }o--|| user: ""
 response }o--|| response_object: ""
 
