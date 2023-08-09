@@ -8,6 +8,12 @@
 * `Analysis`: The process of converting many survey responses to a Sankey diagram by an
   `Analyst` interacting with the `Library`. Surveys are searched by title, `tags`, and/or other survey object fields.
 
+> :memo: We think it would be really cool for surveys to be "composed", e.g. a respondent
+> fills out a survey for a single application and its upstreams. Then, another respondent
+> fills out a survey focused on an SBA and its upstream applications. The data for the upstream
+> applications in the second survey can come from the response to the first survey, enabling one
+> large graph to be composed from multiple surveys.
+
 
 ## Response Object Registry
 
@@ -28,7 +34,6 @@ from an external source.
 
 ### Fields
 
-
 * `Object Type`: Type of Object - `Observing System`, `Data Product`, or `Application`
 * `Short Name`: Short name/description of object, which would be displayed in the analysis to save space.
 * `Full Name`: Full name of the object, which can be left blank if it is the same as the `short name`
@@ -48,6 +53,8 @@ from an external source.
 * `Version`: This field allows the `analyses` to reflect updates overtime. Likely
   this field will have to be open text so it can match the versioning information that the organization uses.
 * `Persistent Identifier`: A standard way to refer back to the object's source, usually a ROR or DOI
+* `Real`: A boolean indicating that an object is real (not hypothetical). Maybe could be called `hypothetical`
+  instead?
 
 `Application` objects also include:
 * `Application Performance Criteria`: Text description of what the ideal performance of this data
@@ -58,6 +65,7 @@ from an external source.
   funding increased and there were X number of additional gages. This would allow us to trace the impact
   of changes on the entire network. Would we do this as another type of `version`, via specific `tags`,
   and/or through unique naming conventions. Related to the survey `type`.
+
 
 ## Rated Instance of an Object
 
@@ -98,17 +106,25 @@ document: https://docs.google.com/presentation/d/1RmEGcPkC3_9o3qeAndv0QvAcdZwFIH
 The `node color` of an `application` is rated separately based on the application performance
 compared to the `application performance criteria`.
 
+
 ## Surveys
 
 * `Name`: Unique name of survey
-* `Description`: Narrative description of the survey topic 
+* `Description`: Narrative description of the survey topic; may be displayed as a prompt
+  to the user. 
 * `Type`: Surveys could be requesting information about the current state or desired
   state of `response objects`. For "desired state" surveys, we wouldn't be interested in
   `gaps`. (_TODO_: This concept needs to be refined in the future.)
+* `Status`: WIP, Published, Closed, Archived? Should we have dedicated date fields, e.g.
+  `opened_date`, `published_date`, etc.
+* `Private`: Can this survey be viewed by non-registered members? (Or should it be
+  restricted to individuals?)
+* `Parent`: Another survey that this one is based on. (TODO: Do we want a version number?)
 
 _TODO_ Hazel to add in more survey-level metadata here
 _QUESTION_ Would this survey design allow for a data manager to link the `data product` 
 links to `observing systems` without any related `application`?
+
 
 ### Responses
 
@@ -120,16 +136,18 @@ links to `observing systems` without any related `application`?
   different `respondent`. We also copy the old response to the new version so the
   `respondent(s)` do not need to start from scratch.
 * `Validated date`: Date when an admin marked this survey valid for inclusion in the
-  `library`.
+  `library`. (NOTE: If populated represents the status is _at least_ validated. Probably
+  want to do all statuses this way.)
 * `Status`: Draft, ready to validate, validated, ??? (_TODO_: Better to use date fields
   instead? e.g. a submitted response has `submitted_date` populated, a draft does not)
-
 
 
 ### Response objects 
 
 _NOTEfromHAZEL_ I believe this section is out of date, and the Rated Instance of 
-an Object is sufficient and up-to-date. 
+an Object is sufficient and up-to-date. TODO: Hazel to merge these sections after
+validating contents. The SBA sub-section here should be moved into the "Rater Instance
+of an Object" section (but may be similar enough that we don't need it!).
 
 Response objects exist both as a definition in the `registry` and an instantiation with
 rating(s) and other fields associated with a `response`. The following specifications
@@ -143,6 +161,7 @@ Some field definitions that may apply to multple objects:
   greater than the `performance rating` of the ouptut subject.
 * `Rationale`: Why a `criticality` or `performance` rating was selected.
 * `Gaps`: Areas where improvement is needed.
+* `Respondent`: Who made the response
 
 
 #### Observing system
@@ -197,23 +216,34 @@ This response subject will be completed by an `SBA cohort`.
   * `Rationale` of criticality rating
 
 _NOTE_ Should we separate the rationale for all the ratings? Performance vs. criticality. Hazel to
-discuss with Sandy. 
+discuss with Sandy.
 
-### Application survey
+
+## Survey response behaviors
+
+We imagine that we'll usually want to request some small number of repsondents to fill out the
+"Observing Systems" -> "Applications" part, and a larger number of respondents to fill out the
+"SBA" and "Application <-> SBA" relationship. For now, we expect users to follow instructions,
+but eventually we may want to apply restrictions so that the right people can only fill out the
+right parts.
+
+
+### Application responses
 
 Gather information about an `application` and its related `data products` and
 their related `observing systems`.
 
 _NOTE_ There could be more than one application per survey - see River Watch example.
 
-### Societal Benefit Area survey
+
+### Societal Benefit Area responses
 
 Gather information about Societal Benefits of an application. Related to exactly 1
-`Application survey`.
+`Application`.
 
 This type of survey generally requires input from a larger group. For example, a SBA
 survey may be sent to up to ~20 `experts` known as a `societal benefit cohort` and
-request information about how 1-3 specific `SBAs` relate to the `application`. Multiple
+request information about how 1-3 specific `SBAs` relate to the `Application`. Multiple
 SBA surveys will be needed to fill out all societal benefits of an application.
 
 
@@ -309,3 +339,12 @@ Fields/relationships:
 * `Description`
 * `Expert(s)`: Members of cohort
 * `SBA(s)`: SBAs cohort must score
+ 
+
+## Analysis views
+
+Enable analysts to filter surveys by "views". We imagine a "River watch" view, a "Rivers"
+view, a "Risk mitigation" view, "A sea ice index" view.
+
+Admins would manage the views. E.g. create a new view, give it a name, and populate `tags`
+for surveys that should display in that view.
