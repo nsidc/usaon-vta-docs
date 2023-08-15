@@ -1,7 +1,6 @@
 # Glossary
 
-* `Survey`: A solicitation for input from a `Respondent`. There are two types of
-  surveys: Application surveys and Societal Benefit surveys.
+* `Survey`: A solicitation for input from a `Respondent`. 
 * `Response`: A completed survey.
 * `Library`: The collection of all `responses`.
 * `Registry`: The collection of available `survey objects` for use in `responses`.
@@ -22,13 +21,13 @@ support `analysis` and also to ease data entry for `Respondents`, over time.
 
 `Respondents` may add new `applications`, `data products`, and `observing systems` to the `registry`.
 
-Is suspect that we can just have a basic `Registered Survey Object` that has generic
-fields whether it is a Data Product, Observing System, Etc. We probably need to have a
-separate structure to register Societal Benefit Analysis framework.
+There is a generic `Registered Survey Object` structure that applies to Applications, 
+Data Product, and Observing Systems. There is a separate structure to register 
+`Societal Benefit Area objects`.
 
-We want to align this data structure with best practices and partner organization
+Ongoing efforts are being made to align this data structure with best practices and partner organization
 structures (e.g. Polar Observing Assets working group, Arctic Data Center, Federated 
-Search crew). Evenually, the goal is to be able to import or sync items in the registry 
+Search crew) with the goal to be able to import or sync items in the registry 
 from an external source.
 
 
@@ -69,11 +68,7 @@ from an external source.
 
 ## Rated Instance of an Object
 
-* _NOTEfromHAZEL_ I think we can consolidate many of the sections below into this single
-  description of links between the `Observing System`, `Data Product`, and `Application` 
-  objects. Links to `Societal Benefit Areas` require separate definitions.
-
-This answers the questions - how important is a particular `Observing System`, 
+The rating answers two questions - how important is a particular `Observing System`, 
 `Data Product`, or `Application`and how well does it perform. It is reflected in the 
 `analysis` by the thickness and color of the link connecting two `survey objects`. For 
 instance: Imagine a satelite (`observing system`) that is very important to a sea ice 
@@ -86,8 +81,6 @@ rating(s) and other fields associated with a `response`. The following specifica
 pertain to rated instances, _not_ `registry` definitions.
 
 * `Link`: Defines which `survey objects` are connected. The rating is applied to that `link`.
-  _TODO_: Research ontologies around links/provinence - 
-  https://www.w3.org/TR/prov-o/#cross-reference-starting-point-terms
 * `Performance rating`: 0-100 rating of the performance of the subject. Answers the question: 
   What is your satisfaction with this input? (0=No performance, 100 = perfect)
 * `Criticality rating`: 0-10 rating of the criticality of an input to an output,
@@ -109,7 +102,16 @@ compared to the `application performance criteria`.
 
 ## Surveys
 
+* `ID`: Computer generated identifier
 * `Name`: Unique name of survey
+* `Description`: Narrative description of the survey topic 
+* `Type`: Surveys could be requesting information about the current state or a hypothetical future
+  state (desired state) of `response objects`.
+* `Tags`: This is a user-defined field that admins can and will edit. It creates additional flexibility in 
+  the analyis, for example allowing for a regionally- or thematically-focused `analysis`.
+* `Year`: Allows for repeated analyses to show change over time
+* `Status`: Published or unpublished
+* `Respondents`: List of `respondents` with edit-access
 * `Description`: Narrative description of the survey topic; may be displayed as a prompt
   to the user. 
 * `Type`: Surveys could be requesting information about the current state or desired
@@ -120,10 +122,9 @@ compared to the `application performance criteria`.
 * `Private`: Can this survey be viewed by non-registered members? (Or should it be
   restricted to individuals?)
 * `Parent`: Another survey that this one is based on. (TODO: Do we want a version number?)
-
-_TODO_ Hazel to add in more survey-level metadata here
-_QUESTION_ Would this survey design allow for a data manager to link the `data product` 
-links to `observing systems` without any related `application`?
+  
+While most `surveys` will link observing systems, data products, applications, and societal benefit areas, 
+some may simply allow for a data manager to link the `data product` to `observing systems` without any related `application`.
 
 
 ### Responses
@@ -205,19 +206,16 @@ Fields/relationships:
 
 #### Societal Benefit Area (SBA)
 
-This response subject will be completed by an `SBA cohort`.
+This response subject may be completed by more than one `respondent`, with the option to visualize
+an aggregated/averaged view or individual `responses`. 
 
-* `Rationale` of performance rating
-* `Gaps` needed improvements
 * `Application` being rated in association with this SBA:
   * `Performance rating`
   * `Rationale` of performance rating
   * `Criticality rating`
   * `Rationale` of criticality rating
-
-_NOTE_ Should we separate the rationale for all the ratings? Performance vs. criticality. Hazel to
-discuss with Sandy.
-
+  * `Gaps` needed improvements
+ 
 
 ## Survey response behaviors
 
@@ -230,10 +228,9 @@ right parts.
 
 ### Application responses
 
-Gather information about an `application` and its related `data products` and
+Gather information about `application(s)` and its related `data products` and
 their related `observing systems`.
 
-_NOTE_ There could be more than one application per survey - see River Watch example.
 
 
 ### Societal Benefit Area responses
@@ -242,8 +239,8 @@ Gather information about Societal Benefits of an application. Related to exactly
 `Application`.
 
 This type of survey generally requires input from a larger group. For example, a SBA
-survey may be sent to up to ~20 `experts` known as a `societal benefit cohort` and
-request information about how 1-3 specific `SBAs` relate to the `Application`. Multiple
+survey may be sent to up to ~20 `respondents` known as a `societal benefit cohort` and
+request information about how 1-3 specific `SBAs` relate to the `application`. Multiple
 SBA surveys will be needed to fill out all societal benefits of an application.
 
 
@@ -253,8 +250,7 @@ A visualization that is generated from the `library` of responses by an `Analyst
 selecting filters based on fields of `response objects`, such as `tags`. We envision
 being able to blend `responses` around common Objects or Fields within those Objects, for
 example: "show all `responses` tied to a given `data product`". Or "show all where `tags`
-include 'rivers'", etc. If this is overly complex, it can be a down the line feature, but is
-critical to how we envision the tool being used over time.
+include 'rivers'", etc.
 
 * `Name`: Unique
 * `Description`
@@ -279,8 +275,12 @@ Can create `surveys` by creating new `versions` of old surveys.
 
 Fields/relationships:
 
-* Name
-* Surveys created
+* `Name`
+* `Email`
+* `ORCID iD`
+* `Surveys created`
+* `Affiliation`
+* `Biography`
 
 
 ### Respondent (field expert)
@@ -296,7 +296,7 @@ Fields/relationships:
 
 * `Name`
 * `Email`
-* `OrcID` (optional?)
+* `OrcID` 
 * `Biography`
 * `Affiliation` (should this be saved on a response-by-response basis? Affiliation may
   change between surveys)
@@ -306,7 +306,7 @@ Fields/relationships:
 
 ### Analyst
 
-Note: These are people who are viewing the data. Not contributing to it in any way.
+These are people who are viewing the data. Not contributing to it in any way.
 A user who registers to generate one or more `analysis`. Eventually, we’d like Analysts
 to be able to save their Analyses, recreate them and update them. I’m not sure we need
 or should track things like Orcid ID, Bio, Affiliation for Analysts, but we could give
@@ -328,7 +328,7 @@ Fields/relationships:
 
 ### SBA Rating Cohort
 
-A group of `experts` who provide `responses` to `Societal Benefit surveys`. A cohort
+A group of `respondents` who provide `responses` to `surveys` focused on SBA ratings. A cohort
 will generally be solicited to complete many `Societal Benefit surveys`, focusing on a
 small number of `SBAs`, to provide a view of the societal benefits of many
 `applications`.
@@ -338,7 +338,6 @@ Fields/relationships:
 * `Name`: Unique
 * `Description`
 * `Expert(s)`: Members of cohort
-* `SBA(s)`: SBAs cohort must score
  
 
 ## Analysis views
