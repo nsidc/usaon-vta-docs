@@ -58,12 +58,13 @@ from an external source.
 `Application` objects also include:
 * `Application Performance Criteria`: Text description of what the ideal performance of this data
   product looks like.
+* `Application Performance Rating`: 0-100 rating of the performance of the application compared to
+   the `Application Performance Criteria` (0=No performance, 100 = perfect)
 
-  _NOTE_ We intend to do `current state` and `desired state` `analyses`. In a `desired state` `analysis` we
-  would need a way to include `desired state` objects, for instance the USGS stream gage network if
-  funding increased and there were X number of additional gages. This would allow us to trace the impact
-  of changes on the entire network. Would we do this as another type of `version`, via specific `tags`,
-  and/or through unique naming conventions. Related to the survey `type`.
+  _NOTE_ We intend to do `current state` and `desired state` `analyses`. In a `desired state`
+  `analysis`, the `real` field allows us to `desired state` (hypothetical) objects. For instance,
+  the USGS stream gage network if funding increased and there were X number of additional gages.
+  This allows us to trace the impact of changes on the entire network. Related to the survey `type`.
 
 
 ## Rated Instance of an Object
@@ -81,23 +82,33 @@ rating(s) and other fields associated with a `response`. The following specifica
 pertain to rated instances, _not_ `registry` definitions.
 
 * `Link`: Defines which `survey objects` are connected. The rating is applied to that `link`.
-* `Performance rating`: 0-100 rating of the performance of the subject. Answers the question: 
-  What is your satisfaction with this input? (0=No performance, 100 = perfect)
 * `Criticality rating`: 0-10 rating of the criticality of an input to an output,
   e.g. criticality of an `observing system` to a `data product`. This answers the question:
   On a scale of 1-10, how much would the loss of this input impact the performance of your 
   `data product` or `application` (1 - very little impact; 10 - complete loss of performance).
-* `Rationale`: Why a `criticality` or `performance` rating was selected.
+* `Criticality rationale`: Text description answering the question: What accounts for this
+   criticality rating? If there is a close equivalent product, why do you prefer this one?
+* `Performance rating`: 0-100 rating of the performance of the subject. Answers the question: 
+   What is your satisfaction with this input? (0=No performance, 100 = perfect)
+* `Performance rationale`: Text description answering the question: What accounts for this
+   performance rating? Include any journal articles, statements or contextual observations
+   that might help us to understand your rating.
 * `Gaps`: If the rating is less than "ideal" what improvements are needed.
 * `Variable or Attribute`: If an `observing system` or `data product` contains many
   observable properties or variables, this allows a `respondent` to specify
   which field they used. 
 * `Rated by`: Link to the `respondent` who provided this rating.
 
-The `node color` of an `observating system` or a `data product` is defined in this 
+The `node color` of an `observing system` or a `data product` is defined in this 
 document: https://docs.google.com/presentation/d/1RmEGcPkC3_9o3qeAndv0QvAcdZwFIHC-/edit#slide=id.g1e651286dde_0_54
 The `node color` of an `application` is rated separately based on the application performance
-compared to the `application performance criteria`.
+compared to the `application performance criteria`. 
+
+While only a  small number of respondents will provide responses on `Observing Systems` through 
+`Applications`, a larger number of respondents (up to ~20)  will evaluate the relationships between 
+`Applications` and `Societal Benefit Areas`. For now, we expect users to follow instructions, but
+eventually, we may want to apply restrictions so that the right people can only fill out the right 
+parts.
 
 
 ## Surveys
@@ -123,8 +134,12 @@ compared to the `application performance criteria`.
   restricted to individuals?)
 * `Parent`: Another survey that this one is based on. (TODO: Do we want a version number?)
   
-While most `surveys` will link observing systems, data products, applications, and societal benefit areas, 
-some may simply allow for a data manager to link the `data product` to `observing systems` without any related `application`.
+While most `surveys` will link observing systems, data products, applications, and societal benefit
+areas, some may simply allow for a data manager to link the `data product` to `observing systems`
+without any related `application`. Additionally, a group of up to ~20 `respondents` known as a 
+`societal benefit cohort` may provide ratings on how  1-3 specific `SBAs` relate to the 
+`application`. 
+
 
 
 ### Responses
@@ -142,106 +157,6 @@ some may simply allow for a data manager to link the `data product` to `observin
 * `Status`: Draft, ready to validate, validated, ??? (_TODO_: Better to use date fields
   instead? e.g. a submitted response has `submitted_date` populated, a draft does not)
 
-
-### Response objects 
-
-_NOTEfromHAZEL_ I believe this section is out of date, and the Rated Instance of 
-an Object is sufficient and up-to-date. TODO: Hazel to merge these sections after
-validating contents. The SBA sub-section here should be moved into the "Rater Instance
-of an Object" section (but may be similar enough that we don't need it!).
-
-Response objects exist both as a definition in the `registry` and an instantiation with
-rating(s) and other fields associated with a `response`. The following specifications
-pertain to rated instances, _not_ `registry` definitions.
-
-Some field definitions that may apply to multple objects:
-
-* `Performance rating`: 0-100 rating of the performance of the subject
-* `Criticality rating`: 0-100 (or less) rating of the criticality of an input to an output,
-  e.g. criticality of an `observing system` to a `data product`. Rating must not be
-  greater than the `performance rating` of the ouptut subject.
-* `Rationale`: Why a `criticality` or `performance` rating was selected.
-* `Gaps`: Areas where improvement is needed.
-* `Respondent`: Who made the response
-
-
-#### Observing system
-
-The optional input to a `Data product` (e.g. reanalysis or model-derived data products
-may not require an observing system).
-
-Fields/relationships:
-
-* `Performance rating`
-* `Rationale` for performance rating
-* `Gaps`
-* `Data product(s)` supported by this observing system
-    * `Criticality rating`
-    * `Rationale` for criticality rating
-
-
-#### Data product
-
-* `Performance criteria`: Text description of what the ideal performance of this data
-  product looks like. (_TODO_: Needs more thought. There is some disagreement on the AON
-  side about how/if this should be used.)
-* `Performance rating`
-* `Rationale` for performance rating (_NOTE_: AON team to consider if pre-defined values
-  are a good idea.)
-* `Gaps`
-* `Application` supported by this data product (always the same for a given survey,
-  since each survey corresponds with exactly 1 application)
-    * `Criticality rating`
-    * `Rationale` for criticality rating
-
-
-#### Application
-
-* `Performance criteria`: Text description of what the ideal performance of this data
-  product looks like.
-* `Performance rating`
-* `Rationale` for performance rating
-* `Gaps`
-
-
-#### Societal Benefit Area (SBA)
-
-This response subject may be completed by more than one `respondent`, with the option to visualize
-an aggregated/averaged view or individual `responses`. 
-
-* `Application` being rated in association with this SBA:
-  * `Performance rating`
-  * `Rationale` of performance rating
-  * `Criticality rating`
-  * `Rationale` of criticality rating
-  * `Gaps` needed improvements
- 
-
-## Survey response behaviors
-
-We imagine that we'll usually want to request some small number of repsondents to fill out the
-"Observing Systems" -> "Applications" part, and a larger number of respondents to fill out the
-"SBA" and "Application <-> SBA" relationship. For now, we expect users to follow instructions,
-but eventually we may want to apply restrictions so that the right people can only fill out the
-right parts.
-
-
-### Application responses
-
-Gather information about `application(s)` and its related `data products` and
-their related `observing systems`.
-
-
-
-### Societal Benefit Area responses
-
-Gather information about Societal Benefits of an application. Related to exactly 1
-`Application`.
-
-This type of survey generally requires input from a larger group. For example, a SBA
-survey may be sent to up to ~20 `respondents` known as a `societal benefit cohort` and
-request information about how 1-3 specific `SBAs` relate to the `application`. Multiple
-SBA surveys will be needed to fill out all societal benefits of an application.
 
 
 ## Analysis
