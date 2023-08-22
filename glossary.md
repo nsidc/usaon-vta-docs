@@ -1,7 +1,7 @@
 # Glossary
 
 * `Survey`: A solicitation for input from a `Respondent`. 
-* `Response`: A completed survey.
+* `Response`: A completed or in progress survey.
 * `Library`: The collection of all `responses`.
 * `Registry`: The collection of available `survey objects` for use in `responses`.
 * `Analysis`: The process of converting many survey responses to a Sankey diagram by an
