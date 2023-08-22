@@ -114,26 +114,26 @@ parts.
 ## Surveys
 
 * `ID`: Computer generated identifier
-* `Name`: Unique name of survey
+* `Title`: Unique name of survey
 * `Description`: Narrative description of the survey topic 
-* `Type`: Surveys could be requesting information about the current state or a hypothetical future
-  state (desired state) of `response objects`.
 * `Tags`: This is a user-defined field that admins can and will edit. It creates additional flexibility in 
   the analyis, for example allowing for a regionally- or thematically-focused `analysis`.
-* `Year`: Allows for repeated analyses to show change over time
-* `Status`: Published or unpublished
 * `Respondents`: List of `respondents` with edit-access
 * `Description`: Narrative description of the survey topic; may be displayed as a prompt
   to the user. 
-* `Type`: Surveys could be requesting information about the current state or desired
-  state of `response objects`. For "desired state" surveys, we wouldn't be interested in
-  `gaps`. (_TODO_: This concept needs to be refined in the future.)
 * `Status`: WIP, Published, Closed, Archived? Should we have dedicated date fields, e.g.
   `opened_date`, `published_date`, etc.
 * `Private`: Can this survey be viewed by non-registered members? (Or should it be
   restricted to individuals?)
-* `Parent`: Another survey that this one is based on. (TODO: Do we want a version number?)
   
+#### Fields not yet supported / need to discuss more:
+* `Year`: Allows for repeated analyses to show change over time - (We currently have 
+`created_timestamp` field which can show when it was originally created. Year seems too wide?)
+* `Type`: Surveys could be requesting information about the current state or desired
+  state of `response objects`. For "desired state" surveys, we wouldn't be interested in
+  `gaps`. (_TODO_: This concept needs to be refined in the future.)
+* `Parent`: Another survey that this one is based on. (TODO: Do we want a version number?)
+
 While most `surveys` will link observing systems, data products, applications, and societal benefit
 areas, some may simply allow for a data manager to link the `data product` to `observing systems`
 without any related `application`. Additionally, a group of up to ~20 `respondents` known as a 
@@ -142,7 +142,7 @@ without any related `application`. Additionally, a group of up to ~20 `responden
 
 
 
-### Responses
+## Responses
 
 * `Respondents`: `Experts` who can contribute to `response`.
 * `Tags`: Arbitrary strings for grouping surveys. For example: `river-watch`.
