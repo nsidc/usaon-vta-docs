@@ -33,33 +33,50 @@ from an external source.
 
 ### Fields
 
-* `Object Type`: Type of Object - `Observing System`, `Data Product`, or `Application`
-* `Short Name`: Short name/description of object, which would be displayed in the analysis to save space.
-* `Full Name`: Full name of the object, which can be left blank if it is the same as the `short name`
-* `Organization`: The entity responsible for operation of the observing system, data product, or application.
-  It would be best to use standard names: https://ror.readme.io/docs/create-ror-powered-typeaheads-in-forms
-* `Funder`: The entity responsible for funding the observing system, data product, or application. 
-  It would be best to use standard names: https://ror.readme.io/docs/create-ror-powered-typeaheads-in-forms
-* `Country/Countries`: The countries contributing to running or funding an object. Use ISO 3166.
-* `Website`: The URL to access the referenced object directly
-* `Description`: Short summary of the object, including geographic or thematic scope. This could also be 
-  referred to as an abstract (see Arctic Data Center). 
-* `Contact Name`: The name of a point of contact for the object, e.g. a data manager or program coordinator.
-* `Contact Title`: The title of a point of contact for the object.
-* `Contact Email`: The email address for a point of contact for the object.
-* `Tags`: This is a user-defined field that admins can and will edit. It creates additional flexibility in 
+* `Object Type`: Type of Object - `Observing System`, `Data Product`, or `Application`.
+   (_Multiplicity: 1..1; Format: Pick from Observing System, Data Product, or Application_)
+* `Short Name`: Short name/description of the object, which would be displayed in the analysis to save space.
+   Preferably in the format [Organization acronym] [name], e.g. USGS Streamgage Network.
+   (_Multiplicity: 1..1; Format: Text_)
+* `Full Name`: Full name of the object. In the case where the full name is brief, this may be the same as the `short name`.
+   Preferably in the format [Organization acronym] [name], e.g. USGS Groundwater and Streamflow Information Program.
+   (_Multiplicity: 1..1; Format: Text_)
+* `Organization`: The entity/entities responsible for the operation of the observing system, data product, or application.
+   Preferably in the format [Full name] [acronym], e.g. National Snow and Ice Data Center (NSIDC).
+   (_Multiplicity: 1..n; Format: Text/List_)
+   * _NOTE_: future enhancement would be to use [Type-ahead standard names](https://ror.readme.io/docs/create-ror-powered-typeaheads)
+* `Funder`: The entity responsible for funding the observing system, data product, or application. Preferably
+   in the format [Full name] [acronym], e.g. National Snow and Ice Data Center (NSIDC). (_Multiplicity: 1..n; Format: Text/List_)
+   * _NOTE_: future enhancement would be to use [Type-ahead standard names](https://ror.readme.io/docs/create-ror-powered-typeaheads)
+* `Country/Countries`: The countries contributing to running or funding an object.
+   (_Multiplicity: 1..n; Format: Pick from [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) or similar_)
+* `Website`: The URL to access the referenced object directly (_Multiplicity: 0..1; Format: URL_)
+* `Description`: Short summary of the object, including geographic or thematic scope. (_Multiplicity: 1..1; Format: Text_)
+* `Contact Name`: The name of a point of contact for the object, e.g. a data manager or program coordinator. (_Multiplicity: 0..1; Format: Text_)
+* `Contact Title`: The title of a point of contact for the object. (_Multiplicity: 0..1; Format: Text_)
+* `Contact Email`: The email address for a point of contact for the object. (_Multiplicity: 0..1; Format: Email_)
+* `Tags`: Please add three or more tags to indicate thematic- or geographic- information about this object to
+  aid in analysis and discovery. (_Multiplicity: 0..n; Format: Text_)
+   * This is a user-defined field that admins can and will edit. It creates additional flexibility in 
   the analyis, for example allowing for a regionally- or thematically-focused `analysis`.
-* `Version`: This field allows the `analyses` to reflect updates overtime. Likely
-  this field will have to be open text so it can match the versioning information that the organization uses.
-* `Persistent Identifier`: A standard way to refer back to the object's source, usually a ROR or DOI
+   * For the early phase of this tool, the description above encourages users to include multiple tags, but the 
+    software does not require it.
+* `Version`: Match the version identification system used by the observing system, data product, or application managers.
+   This field allows the `analyses` to reflect change over time. 
+   (_Multiplicity: 0..n; Format: Text_)
+* `Persistent Identifier`: A standard way to refer back to the object's source, usually a DOI
+   (_Multiplicity: 0..n; Format: Text_)
 * `Real`: A boolean indicating that an object is real (not hypothetical). Maybe could be called `hypothetical`
   instead?
+   (_Multiplicity: 1..1; Format: Boolean_)
 
 `Application` objects also include:
 * `Application Performance Criteria`: Text description of what the ideal performance of this data
   product looks like.
+   (_Multiplicity: 1..1; Format: Text_)
 * `Application Performance Rating`: 0-100 rating of the performance of the application compared to
    the `Application Performance Criteria` (0=No performance, 100 = perfect)
+  (_Multiplicity: 1..1; Format: Number 0-100_)
 
   _NOTE_ We intend to do `current state` and `desired state` `analyses`. In a `desired state`
   `analysis`, the `real` field allows us to `desired state` (hypothetical) objects. For instance,
@@ -70,7 +87,7 @@ from an external source.
 ## Rated Instance of an Object
 
 The rating answers two questions - how important is a particular `Observing System`, 
-`Data Product`, or `Application`and how well does it perform. It is reflected in the 
+`Data Product`, or `Application` and how well does it perform. It is reflected in the 
 `analysis` by the thickness and color of the link connecting two `survey objects`. For 
 instance: Imagine a satelite (`observing system`) that is very important to a sea ice 
 `data product` but performs poorly because of persistent Arctic cloud cover and high 
@@ -171,7 +188,7 @@ include 'rivers'", etc.
 * `Description`
 * `Analyst`
 * Filter criteria or list of `responses` associated with the analysis. (_TODO_: If we
-  don't want an analysis to change over time, we should probably link it to `reponses`
+  don't want an analysis to change over time, we should probably link it to `responses`
   by ID. But if we _do_ want the analysis to be automatically updated as more
   `responses` are submitted with e.g. a specific `tag`, we should use filter criteria)
 
