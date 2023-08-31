@@ -94,6 +94,8 @@ instance: Imagine a satelite (`observing system`) that is very important to a se
 latency (`gaps`. Those would be linked by a thick (high `criticality`) red (low 
 `performance`) line. 
 
+[![](https://mermaid.ink/img/pako:eNptkUFPwkAQhf_KZk6aVGILtHQPJgWOGo3cpByG7hQ2aXeb3alagf_uCnogcU4zL997yeQdoLKKQELd2I9qj47F42tpRJhi_bz15N612YnV4Jlav7m7exBH33eddUxKbIejmK-XyChenFV9xX7zaxZn1PKe3FEUF3Eu_vEvboqua3SFrK3xtxdycWVfXInX9uV6ZStNjI2Yk6Fasygcod9ABC25FrUK3x1-EkoIcS2VIMOqqMa-4RJKcwoo9mxXg6lAsuspgr5TyLTUuHPYgqyx8UHt0LxZ2_5B4QR5gE-QSRKPsjRPJvlskmVZPp1FMICM43SUZnkynsZJOp7k-ewUwdc54X40jYCUZuueLg2cizh9Awd0f24?type=png)](https://mermaid.live/edit#pako:eNptkUFPwkAQhf_KZk6aVGILtHQPJgWOGo3cpByG7hQ2aXeb3alagf_uCnogcU4zL997yeQdoLKKQELd2I9qj47F42tpRJhi_bz15N612YnV4Jlav7m7exBH33eddUxKbIejmK-XyChenFV9xX7zaxZn1PKe3FEUF3Eu_vEvboqua3SFrK3xtxdycWVfXInX9uV6ZStNjI2Yk6Fasygcod9ABC25FrUK3x1-EkoIcS2VIMOqqMa-4RJKcwoo9mxXg6lAsuspgr5TyLTUuHPYgqyx8UHt0LxZ2_5B4QR5gE-QSRKPsjRPJvlskmVZPp1FMICM43SUZnkynsZJOp7k-ewUwdc54X40jYCUZuueLg2cizh9Awd0f24)
+
 Response objects exist both as a definition in the `registry` and an instantiation with
 rating(s) and other fields associated with a `response`. The following specifications
 pertain to rated instances, _not_ `registry` definitions.
