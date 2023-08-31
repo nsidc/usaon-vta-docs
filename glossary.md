@@ -102,6 +102,7 @@ flowchart LR
     B --> |supported by| C(Applications)
     C --> C
     C --> |supported by| D[Societal Benefit Areas]
+```
 
 Response objects exist both as a definition in the `registry` and an instantiation with
 rating(s) and other fields associated with a `response`. The following specifications
