@@ -97,11 +97,11 @@ latency (`gaps`. Those would be linked by a thick (high `criticality`) red (low
 
 ```mermaid
 flowchart LR
-    A[Observing Systems]--> |supported by| B[Data Products]
+    A[Observing Systems]--> |supports| B[Data Products]
     A --> |self| A
-    B --> |supported by| C(Applications)
+    B --> |supports| C(Applications)
     C --> C
-    C --> |supported by| D[Societal Benefit Areas]
+    C --> |supports| D[Societal Benefit Areas]
 ```
 
 Response objects exist both as a definition in the `registry` and an instantiation with
