@@ -100,6 +100,7 @@ flowchart LR
     A[Observing Systems]--> |supports| B[Data Products]
     A --> |self| A
     B --> |supports| C(Applications)
+    B --> B
     C --> C
     C --> |supports| D[Societal Benefit Areas]
 ```
