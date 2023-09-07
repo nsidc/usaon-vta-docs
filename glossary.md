@@ -151,6 +151,26 @@ parts.
   to the user. 
 * `Status`: WIP, Published, Closed, Archived? Should we have dedicated date fields, e.g.
   `opened_date`, `published_date`, etc.
+```mermaid
+---
+title: Survey state
+---
+flowchart LR
+    new["New"]
+    wip["In progress"]
+    review["In review"]
+    published["Published"]
+    archived["Archived"]
+    any["Any state"]
+
+    new --> |response updated| wip
+    wip --> |response completed| review
+    review --> |admin rejects| wip
+    review --> |admin approves| published
+    published --> |admin unapproves| review
+
+    any <--> |admin sets| archived
+```
 * `Private`: Can this survey be viewed by non-registered members? (Or should it be
   restricted to individuals?)
   
