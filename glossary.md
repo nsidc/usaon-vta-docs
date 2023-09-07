@@ -94,6 +94,17 @@ instance: Imagine a satelite (`observing system`) that is very important to a se
 latency (`gaps`. Those would be linked by a thick (high `criticality`) red (low 
 `performance`) line. 
 
+
+```mermaid
+flowchart LR
+    A[Observing Systems]--> |supports| B[Data Products]
+    A --> |self| A
+    B --> |supports| C(Applications)
+    B --> B
+    C --> C
+    C --> |supports| D[Societal Benefit Areas]
+```
+
 Response objects exist both as a definition in the `registry` and an instantiation with
 rating(s) and other fields associated with a `response`. The following specifications
 pertain to rated instances, _not_ `registry` definitions.
