@@ -24,3 +24,4 @@ Download and open in https://diagrams.net
 * [Value Tree Analsis VM](https://github.com/nsidc/usaon-vta-vm)
 * [Value Tree Analysis Database](https://github.com/nsidc/usaon-vta-db)
 * [Value Tree Analysis Survey](https://github.com/nsidc/usaon-vta-survey)
+* [Google Slides draft front-end information](https://docs.google.com/presentation/d/1TW5oS7dcM9w7Jze4Wey_TozGvwvB0IHjF4bRx8TU-O8/edit#slide=id.g1c127e95d9a_0_56)
