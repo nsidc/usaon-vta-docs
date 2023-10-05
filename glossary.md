@@ -77,6 +77,9 @@ from an external source.
 * `Application Performance Rating`: 0-100 rating of the performance of the application compared to
    the `Application Performance Criteria` (0=No performance, 100 = perfect)
   (_Multiplicity: 1..1; Format: Number 0-100_)
+* `Rationale`: Text description answering the question: What accounts for this
+   performance rating?
+* `Gaps`: If the rating is less than "ideal" what improvements are needed.
 
   _NOTE_ We intend to do `current state` and `desired state` `analyses`. In a `desired state`
   `analysis`, the `real` field allows us to `desired state` (hypothetical) objects. For instance,
