@@ -1,5 +1,12 @@
 # USAON Value Tree Analysis Project Documentation
 
+> [!IMPORTANT]
+>
+> The contents of this repo are migrated to the
+> [Benefit Tool](https://github.com/nsidc/usaon-benefit-tool) repository.
+> This repo is read-only.
+
+
 ## Usage
 
 ### Data model
